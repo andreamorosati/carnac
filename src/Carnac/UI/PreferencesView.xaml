@@ -140,7 +140,10 @@
                               ItemsSource="{Binding AvailableColors}"
                               ItemTemplate="{StaticResource ColourPickerTemplate}" />
                         </ui:PreferencesField>
-
+                        
+                        <ui:PreferencesField Header="Show Space as ␣">
+                            <CheckBox IsChecked="{Binding Settings.ShowSpaceAsIcon}" Content="shows space as ' ␣ ' instead of '   '" />
+                        </ui:PreferencesField>
                         <ui:PreferencesField Header="Shortcuts Only">
                             <CheckBox IsChecked="{Binding Settings.DetectShortcutsOnly}" Content="shows only keys which are listed in keymaps folder" />
                         </ui:PreferencesField>

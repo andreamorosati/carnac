@@ -89,6 +89,7 @@ namespace Carnac.Logic.Models
         public bool ShowApplicationIcon { get; set; }
         public bool SettingsConfigured { get; set; }
         public bool ShowOnlyModifiers { get; set; }
+        public bool ShowSpaceAsIcon { get; set; }
 
         [DefaultValue(true)]
         public bool ShowMouseClicks { get; set; }
@@ -120,5 +121,6 @@ namespace Carnac.Logic.Models
         [DefaultValue(0)]
         public double ClickStopOpacity { get; set; }
         public string ClickColor { get; set; }
+
     }
 }
